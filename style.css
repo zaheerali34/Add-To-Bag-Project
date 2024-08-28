@@ -60,14 +60,13 @@ body {
 .product-details h3 {
   color: #0080ff;
   text-transform: uppercase;
-  font-size: 1.1vw;
+  font-size: 1rem;
 }
 
 .product-details h2 {
   margin-top: 0;
-  font-size: 24px;
   padding: 1rem 0;
-  font-size: 2.5vw;
+  font-size: 2rem;
 }
 
 .product-details p {
@@ -144,4 +143,27 @@ body {
 
 .add-to-bag:hover {
   background-color: #43a1fe;
+}
+
+
+@media screen and (max-width: 992px){
+  .product-container {
+    flex-direction: column;
+  }
+
+  
+  .image_container {
+    flex-direction: column-reverse;
+  }
+
+  .image-gallery {
+    display: inline-block;
+    margin-left: 3.5rem;
+  }
+
+  .product-details {
+    width: 100%;
+    text-align: center;
+    padding: 0 2rem;
+  }
 }
